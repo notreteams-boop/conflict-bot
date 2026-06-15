@@ -1,0 +1,24 @@
+name = "conflict-analyzer-bot"
+main = "src/worker.js"
+compatibility_date = "2024-11-01"
+compatibility_flags = ["nodejs_compat"]
+
+# ── KV Namespace ──────────────────────────────────────────────────────────────
+[[kv_namespaces]]
+binding = "KV"
+id = "ВАШ_KV_ID_ЗДЕСЬ"          # замени на реальный KV ID из Cloudflare dashboard
+preview_id = "ВАШ_KV_PREVIEW_ID" # для wrangler dev (можно тот же)
+
+# ── Переменные окружения ──────────────────────────────────────────────────────
+# Чувствительные данные лучше добавить через:
+#   wrangler secret put TELEGRAM_TOKEN
+#   wrangler secret put GEMINI_API_KEY
+# Несекретные можно прямо здесь:
+
+[vars]
+ADMIN_ID = "8231689704"
+BOT_USERNAME = "your_bot_username"  # без @
+
+# ── Секреты (добавить через wrangler secret put или Cloudflare dashboard) ─────
+# TELEGRAM_TOKEN  — токен от BotFather
+# GEMINI_API_KEY  — ключ Google Gemini API
