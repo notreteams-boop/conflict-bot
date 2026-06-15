@@ -6,8 +6,8 @@ compatibility_flags = ["nodejs_compat"]
 # ── KV Namespace ──────────────────────────────────────────────────────────────
 [[kv_namespaces]]
 binding = "KV"
-id = "ВАШ_KV_ID_ЗДЕСЬ"          # замени на реальный KV ID из Cloudflare dashboard
-preview_id = "ВАШ_KV_PREVIEW_ID" # для wrangler dev (можно тот же)
+id = "c7d1f07a6aea4e9ea09dd573853b5e5c"
+preview_id = "c7d1f07a6aea4e9ea09dd573853b5e5c"
 
 # ── Переменные окружения ──────────────────────────────────────────────────────
 # Чувствительные данные лучше добавить через:
